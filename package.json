@@ -1,0 +1,30 @@
+{
+  "name": "bellbird-books",
+  "version": "1.0.0",
+  "description": "213",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanx8512/Bellbird-Books.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/hanx8512/Bellbird-Books/issues"
+  },
+  "homepage": "https://github.com/hanx8512/Bellbird-Books#readme",
+  "dependencies": {
+    "dotenv": "^18.0.5",
+    "express": "^5.2.1",
+    "sqlite3": "^6.0.1"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0",
+    "jest": "^30.5.2"
+  }
+}
