@@ -12,7 +12,7 @@
 - Ten-slide presentation with speaker notes.
 - Jira backlog, sprint CSV files and meeting memo templates.
 - Desktop and mobile-width UI screenshots.
-- Local Git commit and tag `v0.2.0` on branch `codex/a3-release`.
+- Local Git commit and tag `v0.2.0` on branch `feature/a3-release`.
 - Live SCU Jira space `MSD426GXUST23` with the `BB-IMS T23` Epic and 10 stories.
   Epic: `https://scu-it.atlassian.net/browse/MSD426GXUST23-1`
   Backlog: `https://scu-it.atlassian.net/jira/software/c/projects/MSD426GXUST23/boards/2015/backlog`
@@ -25,11 +25,11 @@
 
    ```bash
    cd "C:\Users\han\Documents\ChatGPT\New project\A3_BB-IMS\repo"
-   git push -u origin codex/a3-release
+   git push -u origin feature/a3-release
    git push origin v0.2.0
    ```
 
-2. Open a pull request from `codex/a3-release` to `develop` or `main` and
+2. Open a pull request from `feature/a3-release` to `develop` or `main` and
    merge it so the repository link shows the A3 code.
 
 3. The SCU Jira space already has the Epic and 10 stories. Link the remaining

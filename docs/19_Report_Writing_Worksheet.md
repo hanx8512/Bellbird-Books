@@ -21,7 +21,7 @@ spacing and APA 7th edition.
 | Recorded test cases | 24; 22 passed, 2 not run | `06_Test_Cases.csv` |
 | Defect | DEF-01: zero quantity converted to one; fixed and retested | `08_Defect_Log.csv` |
 | Release | v0.2.0, clean checkout, health check passes | `09_Release_Checklist.md`, `submission/evidence/health-check.txt` |
-| GitHub | `https://github.com/hanx8512/Bellbird-Books`, branch `codex/a3-release`, tag `v0.2.0` | GitHub repository |
+| GitHub | `https://github.com/hanx8512/Bellbird-Books`, branch `feature/a3-release`, tag `v0.2.0` | GitHub repository |
 | Jira Epic | `MSD426GXUST23-1`, `BB-IMS T23 - Bellbird Books inventory and pickup` | SCU Jira |
 | Jira backlog | 10 stories in `MSD426GXUST23` | `scu-jira-backlog.png` |
 | Sprint evidence | `MSD426GX Sprint 1` has 3 stories / 15 points; 7 stories / 33 points remain in the backlog | SCU Jira |
