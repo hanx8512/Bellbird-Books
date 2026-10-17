@@ -16,14 +16,14 @@
 | Peer evaluation notes | `docs/12_Peer_Evaluation_Notes.md` | Template only |
 | Formal acceptance | `docs/14_Formal_Acceptance_Draft.md` | Pending review |
 | Lessons learned | `docs/15_Lessons_Learned_Draft.md` | Draft complete |
-| Jira backlog | `jira/backlog.csv` | Ready to import |
-| Sprint records | `jira/sprint_1.csv` to `sprint_3.csv` | Ready to import |
-| Jira site | https://bellbird-t23.atlassian.net | Provisioning |
+| Jira backlog | https://bellbird-t23.atlassian.net/jira/software/projects/BBIMS/boards/1/backlog | 10 stories imported |
+| Sprint records | Jira sprints 1-3 | 15 / 16 / 13 points |
+| Jira site | https://bellbird-t23.atlassian.net | Ready; project BB-IMS (BBIMS) |
 | Meeting memos | `jira/meeting_memos.md` | Templates ready |
 | Source code | `src/`, `public/`, `server.js` | Working |
 | Automated tests | `test/api.test.js`; `submission/evidence/npm-test.txt` | 11 passed |
 | CI workflow | `.github/workflows/ci.yml` | Ready to run |
 | GitHub repository | https://github.com/hanx8512/Bellbird-Books | Ready to push |
-| Jira board screenshots | [add folder] | Pending |
+| Jira board screenshots | `submission/evidence/jira-backlog.png`; `jira-board.png`; `jira-issue-BBIMS-1.png` | Captured |
 | Browser screenshots | `submission/evidence/app-ui-desktop.png`; `app-ui-mobile.png` | Captured |
 | Release tag | https://github.com/hanx8512/Bellbird-Books/releases/tag/v0.2.0 | Pending push |

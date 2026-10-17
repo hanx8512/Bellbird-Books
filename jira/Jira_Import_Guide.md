@@ -1,6 +1,10 @@
 # Jira import guide
 
 Jira site: https://bellbird-t23.atlassian.net
+Project: BB-IMS (key BBIMS)
+
+The project already contains the ten stories in `backlog.csv`, three sprints,
+story points and sprint assignments. This guide remains as a rebuild record.
 
 The files in this folder are prepared for a CSV import. Jira Cloud field names
 vary by project, so map the columns during the import wizard rather than
