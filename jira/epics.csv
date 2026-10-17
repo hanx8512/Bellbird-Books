@@ -1,0 +1,4 @@
+Epic ID,Epic Name,Summary,Owner,Description
+EPIC-01,Inventory,New and used book inventory,杨世垣,"Catalogue, section stock, used-book copies and search."
+EPIC-02,Orders,Special orders and click-and-collect,刘汉,"Customer requests, reservations, order states and pickup notifications."
+EPIC-03,Quality and release,Testing configuration and release,李宁杰,"CI, automated tests, supplier import, low stock, release and handover."

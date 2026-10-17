@@ -1,0 +1,6 @@
+Issue Key,Summary,Story Points,Assignee,Reviewer,Sprint Goal
+US-BB-04,Used-book sale lock,5,李宁杰,刘汉,"Make customer requests and stock holds reliable enough for a store demonstration."
+US-BB-06,Special order for an unavailable title,3,刘汉,杨世垣,"Make customer requests and stock holds reliable enough for a store demonstration."
+US-BB-07,Click-and-collect reservation and state machine,5,刘汉,李宁杰,"Make customer requests and stock holds reliable enough for a store demonstration."
+US-BB-09,Supplier import and low-stock alert,3,李宁杰,刘汉,"Make customer requests and stock holds reliable enough for a store demonstration."
+TASK-04,Create test plan and traceability matrix,2,李宁杰,刘汉,"Make customer requests and stock holds reliable enough for a store demonstration."

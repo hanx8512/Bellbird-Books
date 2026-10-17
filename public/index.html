@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bellbird Books Inventory and Pickup</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Bellbird Books</p>
+        <h1>Inventory and click-and-collect</h1>
+        <p class="subtitle">
+          Store sections, used-book copies, special orders and pickup reservations.
+        </p>
+      </div>
+      <div class="status" id="status">
+        <span class="status-dot"></span>
+        <span>Checking service</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="summary-grid" aria-label="Inventory summary">
+        <article class="summary-card">
+          <span class="summary-label">Book titles</span>
+          <strong id="summary-titles">0</strong>
+        </article>
+        <article class="summary-card">
+          <span class="summary-label">New copies</span>
+          <strong id="summary-copies">0</strong>
+        </article>
+        <article class="summary-card">
+          <span class="summary-label">Used copies available</span>
+          <strong id="summary-used">0</strong>
+        </article>
+        <article class="summary-card">
+          <span class="summary-label">Low stock titles</span>
+          <strong id="summary-low">0</strong>
+        </article>
+        <article class="summary-card">
+          <span class="summary-label">Open orders</span>
+          <strong id="summary-orders">0</strong>
+        </article>
+      </section>
+
+      <nav class="tabs" aria-label="Main sections">
+        <button class="tab active" data-tab="inventory">Inventory</button>
+        <button class="tab" data-tab="used">Used books</button>
+        <button class="tab" data-tab="orders">Orders</button>
+        <button class="tab" data-tab="suppliers">Suppliers</button>
+      </nav>
+
+      <section class="panel active" id="panel-inventory">
+        <div class="panel-heading">
+          <div>
+            <h2>Store inventory</h2>
+            <p>Filter by section. An unknown or empty section returns an empty list.</p>
+          </div>
+          <div class="toolbar">
+            <input id="book-search" type="search" placeholder="Search title, author or ISBN" />
+            <select id="section-filter">
+              <option value="">All sections</option>
+            </select>
+            <button class="secondary" id="refresh-books" type="button">Refresh</button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Section</th>
+                <th>ISBN</th>
+                <th class="number">Qty</th>
+                <th class="number">Price</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="books-body"></tbody>
+          </table>
+        </div>
+
+        <details class="form-block">
+          <summary>Add a new book title</summary>
+          <form id="book-form" class="form-grid">
+            <label>ISBN<input name="isbn" required placeholder="9780000000001" /></label>
+            <label>Title<input name="title" required /></label>
+            <label>Author<input name="author" required /></label>
+            <label>Category<input name="category" placeholder="Fiction" /></label>
+            <label>Section<input name="section" required placeholder="Fiction" /></label>
+            <label>Price<input name="price" type="number" min="0" step="0.01" value="0" /></label>
+            <label>Quantity<input name="quantity" type="number" min="0" step="1" value="0" /></label>
+            <label>Low-stock threshold<input name="lowStockThreshold" type="number" min="0" step="1" value="3" /></label>
+            <button type="submit">Add book</button>
+          </form>
+        </details>
+      </section>
+
+      <section class="panel" id="panel-used">
+        <div class="panel-heading">
+          <div>
+            <h2>Used-book copies</h2>
+            <p>Each second-hand copy is tracked separately by condition and shelf.</p>
+          </div>
+          <button class="secondary" id="refresh-used" type="button">Refresh</button>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Condition</th>
+                <th>Shelf</th>
+                <th class="number">Cost</th>
+                <th class="number">Price</th>
+                <th>Status</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="used-body"></tbody>
+          </table>
+        </div>
+
+        <details class="form-block">
+          <summary>Add a used-book copy</summary>
+          <form id="used-form" class="form-grid">
+            <label>Title<input name="title" required /></label>
+            <label>Author<input name="author" required /></label>
+            <label>Condition
+              <select name="condition" required>
+                <option value="GOOD">Good</option>
+                <option value="MINT">Mint</option>
+                <option value="POOR">Poor</option>
+              </select>
+            </label>
+            <label>Shelf<input name="shelf" required placeholder="F-04" /></label>
+            <label>Cost<input name="cost" type="number" min="0" step="0.01" value="0" /></label>
+            <label>Price<input name="price" type="number" min="0" step="0.01" value="0" /></label>
+            <button type="submit">Add copy</button>
+          </form>
+        </details>
+      </section>
+
+      <section class="panel" id="panel-orders">
+        <div class="panel-heading">
+          <div>
+            <h2>Orders and reservations</h2>
+            <p>Special orders start as Pending. Reservations hold a copy for 14 days.</p>
+          </div>
+          <button class="secondary" id="refresh-orders" type="button">Refresh</button>
+        </div>
+
+        <div class="order-forms">
+          <form id="special-form" class="compact-form">
+            <h3>Special order</h3>
+            <label>Customer name<input name="name" required /></label>
+            <label>Phone<input name="phone" required /></label>
+            <label>Book
+              <select name="bookId" class="book-select" required></select>
+            </label>
+            <label>Quantity<input name="quantity" type="number" min="1" value="1" /></label>
+            <label>Notes<input name="notes" placeholder="Customer prefers a call" /></label>
+            <button type="submit">Create special order</button>
+          </form>
+
+          <form id="reservation-form" class="compact-form">
+            <h3>Click-and-collect reservation</h3>
+            <label>Customer name<input name="name" required /></label>
+            <label>Phone<input name="phone" required /></label>
+            <label>Book
+              <select name="bookId" class="book-select" required></select>
+            </label>
+            <label>Quantity<input name="quantity" type="number" min="1" value="1" /></label>
+            <label>Notes<input name="notes" placeholder="Pickup after 3 pm" /></label>
+            <button type="submit">Reserve copy</button>
+          </form>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Type</th>
+                <th>Customer</th>
+                <th>Status</th>
+                <th>Items</th>
+                <th>Created</th>
+                <th>Next action</th>
+              </tr>
+            </thead>
+            <tbody id="orders-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel" id="panel-suppliers">
+        <div class="panel-heading">
+          <div>
+            <h2>Supplier import and low stock</h2>
+            <p>Import a CSV file from a distributor. Existing ISBNs add to the current quantity.</p>
+          </div>
+          <button class="secondary" id="refresh-low" type="button">Refresh low stock</button>
+        </div>
+
+        <div class="supplier-layout">
+          <form id="supplier-form" class="compact-form">
+            <h3>Import supplier catalogue</h3>
+            <label>Supplier name<input name="supplierName" required value="Kangaroo Distribution" /></label>
+            <label>Contact<input name="contact" value="orders@kangaroo.example" /></label>
+            <label>CSV
+              <textarea name="csv" rows="10" required>isbn,title,author,category,section,price,quantity,low_stock_threshold
+9781760893330,The Yield,Tara June Winch,Fiction,Fiction,19.99,4,2
+9781922330093,The Labyrinth,Amanda Lohrey,Fiction,Fiction,22.99,2,2</textarea>
+            </label>
+            <button type="submit">Import CSV</button>
+          </form>
+
+          <div>
+            <h3>Low-stock titles</h3>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Title</th>
+                    <th>Section</th>
+                    <th class="number">Qty</th>
+                    <th class="number">Threshold</th>
+                  </tr>
+                </thead>
+                <tbody id="low-body"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

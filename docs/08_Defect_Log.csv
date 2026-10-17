@@ -1,0 +1,2 @@
+"Defect ID","Date found","Found in","Test case","Severity","Description","Root cause","Fix","Retest result","Status","Owner"
+"DEF-01","2026-10-17","Sprint 2 edge-case review","TC-13","P1","A special order or reservation with quantity 0 was accepted and converted to quantity 1.","The API used a fallback that treated 0 as a missing value.","Added a positive-integer validator and used it for special-order item quantity and reservation quantity. Added a regression test.","TC-13 and the full automated suite pass after the fix.","Closed","李宁杰"

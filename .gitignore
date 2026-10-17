@@ -1,6 +1,9 @@
 node_modules/
-*.db
+data/*.db
+data/*.db-*
 .env
-*.log
 .DS_Store
-node_modules
+coverage/
+playwright-report/
+test-results/
+*.log

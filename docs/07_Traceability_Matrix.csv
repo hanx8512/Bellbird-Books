@@ -1,0 +1,11 @@
+"Requirement","Requirement summary","TC-01","TC-02","TC-03","TC-04","TC-05","TC-06","TC-07","TC-08","TC-09","TC-10","TC-11","TC-12","TC-13","TC-14","TC-15","TC-16","TC-17","TC-18","TC-19","TC-20","TC-21","TC-22","TC-23","TC-24","Case count"
+"US-BB-01","New-book catalogue and ISBN entry","","","X","X","","","","","","","","","","","","","","","","","","","","",2
+"US-BB-02","Section inventory with empty-list safety","","X","","","X","","","","","","","","","","","","","","","","","","","",2
+"US-BB-03","Used-book copy record","","","","","","","X","X","","","","","","","","","","","","","","","","",2
+"US-BB-04","Used-book sale lock","","","","","","","","","X","X","","","","","","","","","","","","","","",2
+"US-BB-05","Combined title and author search","","","","","","X","","","","","","","","","","","","","","","","","","",1
+"US-BB-06","Special order for an unavailable title","","","","","","","","","","","X","X","X","","","","","","","","","","","",3
+"US-BB-07","Click-and-collect reservation and state machine","","","","","","","","","","","","","X","X","X","X","X","","","","","","","",5
+"US-BB-08","Expired reservation release","","","","","","","","","","","","","","","","","","","","","","","","X",1
+"US-BB-09","Supplier import and low-stock alert","","","","","","","","","","","","","","","","","","X","X","","","","","",2
+"US-BB-10","Seed data automated tests and v0.2.0 release","X","","","","","","","","","","","","","","","","","","","X","X","X","","X",5

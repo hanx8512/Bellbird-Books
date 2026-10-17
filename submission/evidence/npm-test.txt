@@ -1,0 +1,17 @@
+> bb-ims@0.2.0 test
+> node --test test/api.test.js
+
+PASS health and summary endpoints respond
+PASS unknown section returns an empty list, not an error
+PASS search matches partial title and author text
+PASS book creation validates input and rejects duplicate ISBNs
+PASS used-book copy can be sold once without affecting another copy
+PASS A2 second-hand API aliases remain compatible
+PASS special order starts as PENDING and follows the special-order state machine
+PASS order quantity must be at least one
+PASS reservation holds stock, prevents oversell and releases stock on cancellation
+PASS supplier CSV import adds stock and reports low-stock titles
+PASS static storefront is served
+
+11 tests passed
+0 tests failed

@@ -1,0 +1,7 @@
+Issue Key,Summary,Story Points,Assignee,Reviewer,Sprint Goal
+US-BB-01,New-book catalogue and ISBN entry,5,杨世垣,刘汉,"Create a searchable catalogue and section inventory with safe empty-section behaviour."
+US-BB-02,Section inventory with empty-list safety,5,杨世垣,李宁杰,"Create a searchable catalogue and section inventory with safe empty-section behaviour."
+US-BB-03,Used-book copy record,5,李宁杰,杨世垣,"Create a searchable catalogue and section inventory with safe empty-section behaviour."
+TASK-01,Set up Jira board and sprint fields,1,杨世垣,刘汉,"Create a searchable catalogue and section inventory with safe empty-section behaviour."
+TASK-02,Set up GitHub repository and CI,1,李宁杰,杨世垣,"Create a searchable catalogue and section inventory with safe empty-section behaviour."
+TASK-03,Create sprint meeting memos,1,杨世垣,李宁杰,"Create a searchable catalogue and section inventory with safe empty-section behaviour."
