@@ -16,14 +16,15 @@
 | Peer evaluation notes | `docs/12_Peer_Evaluation_Notes.md` | Template only |
 | Formal acceptance | `docs/14_Formal_Acceptance_Draft.md` | Pending review |
 | Lessons learned | `docs/15_Lessons_Learned_Draft.md` | Draft complete |
-| Jira backlog | https://bellbird-t23.atlassian.net/jira/software/projects/BBIMS/boards/1/backlog | 10 stories imported |
-| Sprint records | Jira sprints 1-3 | 15 / 16 / 13 points |
-| Jira site | https://bellbird-t23.atlassian.net | Ready; project BB-IMS (BBIMS) |
+| Jira backlog | https://scu-it.atlassian.net/jira/software/c/projects/MSD426GXUST23/boards/2015/backlog | 10 stories in shared SCU space |
+| Jira Epic | https://scu-it.atlassian.net/browse/MSD426GXUST23-1 | BB-IMS T23 epic |
+| Sprint records | MSD426GX Sprint 1 | 3 stories / 15 points |
+| Jira site | https://scu-it.atlassian.net | SCU account; space MSD426GXUST23 |
 | Meeting memos | `jira/meeting_memos.md` | Templates ready |
 | Source code | `src/`, `public/`, `server.js` | Working |
 | Automated tests | `test/api.test.js`; `submission/evidence/npm-test.txt` | 11 passed |
 | CI workflow | `.github/workflows/ci.yml` | Ready to run |
 | GitHub repository | https://github.com/hanx8512/Bellbird-Books | Ready to push |
-| Jira board screenshots | `submission/evidence/jira-backlog.png`; `jira-board.png`; `jira-issue-BBIMS-1.png` | Captured |
+| Jira board screenshots | `submission/evidence/scu-jira-backlog.png`; `scu-jira-epic.png` | Captured |
 | Browser screenshots | `submission/evidence/app-ui-desktop.png`; `app-ui-mobile.png` | Captured |
 | Release tag | https://github.com/hanx8512/Bellbird-Books/releases/tag/v0.2.0 | Pending push |

@@ -1,10 +1,15 @@
 # Jira import guide
 
-Jira site: https://bellbird-t23.atlassian.net
-Project: BB-IMS (key BBIMS)
+Jira site: https://scu-it.atlassian.net
+Shared space: MSD426GXUST23
+Epic: MSD426GXUST23-1 (BB-IMS T23)
 
-The project already contains the ten stories in `backlog.csv`, three sprints,
-story points and sprint assignments. This guide remains as a rebuild record.
+The SCU space now contains the ten stories in `backlog.csv` and the BB-IMS T23
+epic. The first four stories are in `MSD426GX Sprint 1`; the rest remain in the
+backlog. This guide remains as a rebuild record if the shared space is reset.
+
+The personal fallback site `bellbird-t23.atlassian.net` also contains a
+complete BB-IMS project with three sprints and the same ten stories.
 
 The files in this folder are prepared for a CSV import. Jira Cloud field names
 vary by project, so map the columns during the import wizard rather than

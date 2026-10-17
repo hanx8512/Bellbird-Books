@@ -12,6 +12,11 @@
 - Jira backlog, sprint CSV files and meeting memo templates.
 - Desktop and mobile-width UI screenshots.
 - Local Git commit and tag `v0.2.0` on branch `codex/a3-release`.
+- Live SCU Jira space `MSD426GXUST23` with the `BB-IMS T23` Epic and 10 stories.
+  Epic: `https://scu-it.atlassian.net/browse/MSD426GXUST23-1`
+  Backlog: `https://scu-it.atlassian.net/jira/software/c/projects/MSD426GXUST23/boards/2015/backlog`
+  The first four stories are in `MSD426GX Sprint 1`; the remaining stories
+  are in the backlog with points set.
 
 ## What you must still do
 
@@ -26,8 +31,11 @@
 2. Open a pull request from `codex/a3-release` to `develop` or `main` and
    merge it so the repository link shows the A3 code.
 
-3. Create the Jira project and import `jira/backlog.csv`. Capture screenshots
-   of the board and the three sprints.
+3. The SCU Jira space already has the Epic and 10 stories. Link the remaining
+   stories to the Epic if your tutor requires every story under one Epic, and
+   drag them into the sprint you want to use. Jira's bulk "add existing" picker
+   switched to create-new mode during setup, so this last linking step was not
+   completed automatically.
 
 4. Run the browser check in Edge as well as Chrome and save the screenshot.
 
