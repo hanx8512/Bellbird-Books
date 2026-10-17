@@ -8,6 +8,7 @@
   test plan summary, formal acceptance form, lessons learned and peer
   evaluation template.
 - Test plan workbook with scenarios, cases, traceability and defect log.
+- Report writing worksheet with word targets, evidence and analysis prompts.
 - Ten-slide presentation with speaker notes.
 - Jira backlog, sprint CSV files and meeting memo templates.
 - Desktop and mobile-width UI screenshots.
@@ -39,9 +40,10 @@
 
 4. Run the browser check in Edge as well as Chrome and save the screenshot.
 
-5. Write the final report prose from `docs/10_Final_Report_Evidence_Pack.md`
-   and the DOCX scaffold. The A3 brief does not permit AI-generated report
-   text, so the final prose must be written and checked by the team.
+5. Write the final report prose from `docs/10_Final_Report_Evidence_Pack.md`,
+   `09_Report_Writing_Worksheet.docx` and the DOCX scaffold. The A3 brief does
+   not permit AI-generated report text, so the final prose must be written and
+   checked by the team.
 
 6. Complete the formal acceptance form with the assessor or product owner.
 
