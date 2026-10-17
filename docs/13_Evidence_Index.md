@@ -18,6 +18,7 @@
 | Lessons learned | `docs/15_Lessons_Learned_Draft.md` | Draft complete |
 | Jira backlog | `jira/backlog.csv` | Ready to import |
 | Sprint records | `jira/sprint_1.csv` to `sprint_3.csv` | Ready to import |
+| Jira site | https://bellbird-t23.atlassian.net | Provisioning |
 | Meeting memos | `jira/meeting_memos.md` | Templates ready |
 | Source code | `src/`, `public/`, `server.js` | Working |
 | Automated tests | `test/api.test.js`; `submission/evidence/npm-test.txt` | 11 passed |

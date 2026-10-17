@@ -1,5 +1,7 @@
 # Jira import guide
 
+Jira site: https://bellbird-t23.atlassian.net
+
 The files in this folder are prepared for a CSV import. Jira Cloud field names
 vary by project, so map the columns during the import wizard rather than
 assuming the default names.
